@@ -67,10 +67,10 @@ def getExamples(first, second,counter,action=("x",":","+","-")):
 				RandFirstTmp = RandSecond
 				RandSecondTmp = RandFirst			
 			
-			if countertemp%5 == 1:
-				text = text+str(RandFirstTmp)+" "+val+" "+str(RandSecondTmp)+"\n\r"
+			if countertemp%3 == 1:
+				text = text+str(RandFirstTmp)+" "+val+" "+str(RandSecondTmp)+" = __________    \n\r"
 			else:
-				text = text+str(RandFirstTmp)+" "+val+" "+str(RandSecondTmp)+"      "
+				text = text+str(RandFirstTmp)+" "+val+" "+str(RandSecondTmp)+" = __________     "
 			
 			countertemp -=1	
 		countertemp = counter
@@ -86,5 +86,5 @@ def writeFile(k,first, second,counter):
 
 if __name__ == "__main__":
 	
-	getExamples(4,3,20)
+	getExamples(3,2,40)
 
